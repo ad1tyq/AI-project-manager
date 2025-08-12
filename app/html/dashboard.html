@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/dashboardAI.css">
+    <link rel="stylesheet" href="../css/dbCalendar.css">
+    <link rel="stylesheet" href="../css/dbProjects.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="home">
+        <div id="homeStatus">
+            <div id="activeProjects" class="status">
+                <i class="ri-sd-card-line" id="hsIcon" style="color: rgb(88, 99, 195);"></i>
+                <div id="hsText">
+                    <p style="font-size: medium; color: gray;">Active Projects</p>
+                    <h3 style="font-size: xx-large; margin-top: -10px; font-weight: 500;">3</h3>
+                </div>
+            </div>
+            <div id="completed" class="status">
+                <i class="ri-chat-check-line" id="hsIcon" style="color: rgb(88, 195, 131);"></i>
+                <div id="hsText">
+                    <p style="font-size: medium; color: gray;">Completed Tasks</p>
+                    <h3 style="font-size: xx-large; margin-top: -10px; font-weight: 500;">1</h3>
+                </div>
+            </div>
+            <div id="due" class="status">
+                <i class="ri-rest-time-line" id="hsIcon" style="color: rgb(195, 75, 75);"></i>
+                <div id="hsText">
+                    <p style="font-size: medium; color: gray;">Overdue Tasks</p>
+                    <h3 style="font-size: xx-large; margin-top: -10px; font-weight: 500;">0</h3>
+                </div>
+            </div>
+            <div id="hoursWeek" class="status">
+                <i class="ri-time-line" id="hsIcon" style="color: rgb(230, 185, 88);"></i>
+                <div id="hsText">
+                    <p style="font-size: medium; color: gray;">Hours This Week</p>
+                    <h3 style="font-size: xx-large; margin-top: -10px; font-weight: 500;">32.5</h3>
+                </div>
+            </div>
+        </div>
+        <div id="WorkFlow">
+            <div id="recentProjects">
+                <div id="recentProjects00">
+                    <h2 id="WorkFlowrpN">Recent Projects</h2>
+                    <button id="rpViewAll">View All</button>
+                </div>
+                <div id="recentProjects01">
+                    <div id="recentProjects1" class="rp">
+                        <i class="ri-smartphone-line" id="rpIcon"></i>
+                        <div id="rpText">
+                            <h3 style="font-size: large; font-weight: 500;">Mobile App Redesign</h3>
+                            <p style="font-size: small; margin-top: -10px; color: gray;">1 members ∙ Due in 5 days</p>
+                        </div>:
+                    </div>
+                    <div id="recentProjects2" class="rp">
+                        <i class="ri-bar-chart-2-line" id="rpIcon"></i>
+                        <div id="rpText">
+                            <h3 style="font-size: large; font-weight: 500;">Q4 Analytics Dashboard</h3>
+                            <p style="font-size: small; margin-top: -10px; color: gray;">1 members • Due in 12 days</p>
+                        </div>
+                    </div>
+                    <div id="recentProjects3" class="rp">
+                        <i class="ri-rocket-2-line" id="rpIcon"></i>
+                        <div id="rpText">
+                            <h3 style="font-size: large; font-weight: 500;">Product Launch Campaign</h3>
+                            <p style="font-size: small; margin-top: -10px; color: gray;">1 members • Due in 20 days</p>
+                        </div>
+                    </div>
+                    <div id="recentProjects4" class="rp">
+                        <i class="ri-smartphone-line" id="rpIcon"></i>
+                        <div id="rpText">
+                            <h3 style="font-size: large; font-weight: 500;">--</h3>
+                            <p style="font-size: small; margin-top: -10px; color: gray;">--</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="calendarCard">
+                <div class="calendar">
+                    <div class="header">
+                        <button id="prevBtn">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </button>
+                        <div class="monthYr" id="monthYr">August 2025</div>
+                        <button id="nextBtn">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </button>
+                    </div>
+                    <div class="days">
+                        <div class="day">Mon</div>
+                        <div class="day">Tue</div>
+                        <div class="day">Wed</div>
+                        <div class="day">Thu</div>
+                        <div class="day">Fri</div>
+                        <div class="day">Sat</div>
+                        <div class="day">Sun</div>
+                    </div>
+                    <div class="dates" id="dates"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sideBar">
+        <div id="logobar">
+            <i class="ri-mind-map"></i>
+            <h2 id="logoText">WorkFlow</h2>
+        </div>
+        <div id="contents">
+            <div id="content1" class="content">
+                <i class="ri-home-4-line" id="cicn"></i>
+                Dashboard
+            </div>
+            <div id="content2" class="content">
+                <i class="ri-quill-pen-line" id="cicn"></i>
+                Projects
+            </div>
+            <div id="content3" class="content">
+                <i class="ri-task-line" id="cicn"></i>
+                Tasks
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <div id="srchbar">
+            <i class="ri-search-line"></i>
+            <input id="srch" placeholder="Search projects, tasks...">
+        </div>
+        <div id="newProjectHeader">
+            <i class="ri-add-line"></i>
+            New Project
+        </div>
+    </div>
+    <div id="projects">
+        <div id="projectsTemp">
+            <div id="projectsContainer">
+                <div id="PN">Projects</div>
+                <div id="projectNames">
+                    <div id="PName1" class="PName">
+                        <div id="PNum">1</div>
+                        <div id="PDetails1" class="PDetails">Mobile App Redesign :<p id="PDetailsdot1" class="PDetailsdot"></p></div>
+                    </div>
+                    <div id="PName2" class="PName">
+                        <div id="PNum">2</div>
+                        <div id="PDetails2" class="PDetails">Q4 Analytics Dashboard :<p id="PDetailsdot2" class="PDetailsdot"></p></div>
+                    </div>
+                    <div id="PName3" class="PName">
+                        <div id="PNum">3</div>
+                        <div id="PDetails3" class="PDetails">Product Launch Campaign :<p id="PDetailsdot3" class="PDetailsdot"></p></div>
+                    </div>
+                    <!--<div id="PName4" class="PName">
+                        <div id="PNum">4</div>
+                        <div id="PDetails">--<p id="PDetailsdot">--</p></div>
+                    </div>-->
+                </div>
+            </div>
+            <div id="wordEditor">
+                <div id="toolbar">
+                    <input id="PT" text" placeholder="Filename" value="untitled">
+                    <select style="cursor: pointer;">
+                        <!--selected="" hidden="" disabled=""-->
+                        <option value="">File</option>
+                        <option value="new">New File</option>
+                        <option value="txt">Save as Text</option>
+                        <option value="pdf">Save as PDF</option>
+                    </select>
+                    <select style="cursor: pointer;">
+                        <option value="">Format</option>
+                        <option value="h1">Heading 1</option>
+                        <option value="h2">Heading 2</option>
+                        <option value="h3">Heading 3</option>
+                        <option value="h4">Heading 4</option>
+                        <option value="h5">Heading 5</option>
+                        <option value="h6">Heading 6</option>
+                        <option value="p">Paragraph</option>
+                    </select>
+                    <select style="cursor: pointer;">
+                        <option value="">Font Sise</option>
+                        <option value="1">Extra Small</option>
+                        <option value="2">Small</option>
+                        <option value="3">Regular</option>
+                        <option value="4">Medium</option>
+                        <option value="5">Large</option>
+                        <option value="6">Extra Large</option>
+                        <option value="7">Big</option>
+                    </select style="cursor: pointer;">
+                    <div class="color">
+                        <span>Color</span>
+                        <input type="color">
+                    </div>
+                    <div class="color">
+                        <span>Background</span>
+                        <input type="color">
+                    </div>
+                </div>
+                <div id="toolbar1">
+                    <button style="cursor: pointer;"><i class="ri-arrow-go-back-line"></i></button>
+                    <button style="cursor: pointer;"><i class="ri-arrow-go-forward-line"></i></button>
+                    <button style="cursor: pointer;"><i class="ri-bold"></i></button>
+                    <button style="cursor: pointer;"><i class="ri-underline"></i></button>
+                    <button style="cursor: pointer;"><i class="ri-italic"></i></button>
+                    <button style="cursor: pointer;"><i class="ri-strikethrough"></i></button>
+                    <button style="cursor: pointer;"><i class="ri-align-left"></i></button>
+                    <button style="cursor: pointer;"><i class="ri-align-center"></i></button>
+                    <button style="cursor: pointer;"><i class="ri-align-right"></i></button>
+                    <button style="cursor: pointer;"><i class="ri-align-justify"></i></button>
+                    <button style="cursor: pointer;"><i class="ri-list-ordered"></i></button>
+                    <button style="cursor: pointer;"><i class="ri-list-check"></i></button>
+                    <button style="cursor: pointer;"><i class="ri-links-line"></i></button>
+                    <button style="cursor: pointer;"><i class="ri-link-unlink"></i></button>
+                    <button style="cursor: pointer;" id="save">save</button>
+                </div>
+                <div id="contentWrite1" class="contentWrite" contenteditable="true" spellcheck="false">Reinvigorating User Experience and Business Value.
+                    <br><br>
+                    In today's fiercely competitive digital ecosystem, a mobile application is far more than just a piece of software; it's a critical touchpoint between a brand and its audience. As technology evolves and user expectations soar, even a successful app can become stagnant, losing its edge and failing to meet contemporary demands. This is where a mobile app redesign becomes not just an option, but a strategic imperative. It’s a comprehensive process aimed at revitalising an existing application to enhance user experience, improve performance, align with evolving business goals, and secure its long-term viability. The motivations behind an app redesign are varied but typically coalesce around key challenges. An outdated user interface (UI) might feel clunky or visually unappealing, failing to reflect modern design trends or a refreshed brand identity. Poor user experience (UX), characterised by confusing navigation, slow loading times, or frustrating workflows, often leads to high abandonment rates and negative reviews.
+<br><br>
+Furthermore, an app might struggle with performance issues like frequent crashes or excessive battery drain, eroding user trust. Business factors such as a shift in target audience, the need to integrate new features, or a desire to increase conversions (e.g., sales, subscriptions) also frequently trigger a redesign. A successful mobile app redesign is a multi-faceted undertaking, extending far beyond a simple facelift. It begins with in-depth research, analysing current app analytics, user feedback, competitor offerings, and emerging technological trends. This phase defines the core problems to solve and identifies opportunities for improvement. Next, a strategic planning phase outlines the new information architecture, user flows, and feature prioritisation. This is followed by wireframing and prototyping, where the new UX is designed and tested for intuitiveness and efficiency, often through user testing to gather real-world insights. Only then does the visual design (UI) come into play, crafting a modern, intuitive, and aesthetically pleasing interface that resonates with the target audience and reinforces brand identity. Finally, robust development and rigorous testing ensure the redesigned app is performant, stable, and bug-free before its re-launch. The benefits of a well-executed mobile app redesign are substantial and far-reaching. Firstly, it dramatically improves user satisfaction and engagement, leading to higher retention rates and increased daily active users. A modern, intuitive, and performant app fosters loyalty and encourages more frequent use. Secondly, it can significantly boost business metrics, such as conversion rates, in-app purchases, or subscription renewals, directly contributing to revenue growth. Thirdly, a redesign strengthens brand perception, showcasing innovation and a commitment to providing the best possible digital experience. It also provides an opportunity to integrate new technologies and features, future-proofing the app and giving it a competitive edge. Lastly, by optimising the underlying code and structure, a redesign can lead to improved performance and scalability, making the app more efficient and easier to maintain in the long run.
+<br><br>
+In conclusion, a mobile app redesign is not merely an expense but a critical investment in an organisation's digital future. It's a proactive step to address contemporary challenges, capitalise on new opportunities, and ensure that a brand's most direct digital touchpoint remains compelling, effective, and aligned with both user expectations and strategic business objectives. By prioritising user experience and embracing modern design principles, a redesign can breathe new life into an app, transforming it from a mere utility into an indispensable tool for its users and a powerful asset for the business
+                </div>
+                <div id="contentWrite2" class="contentWrite" contenteditable="true" spellcheck="false">The Strategic Compass: Navigating Success with the Q4 Analytics Dashboard
+<br><br>
+The fourth quarter (Q4) represents a unique and often culminating period for businesses. It's a time of intense activity – holiday sales, year-end pushes, and the final sprint towards annual targets. Navigating this critical phase effectively demands more than just intuition; it requires data-driven precision. This is where the Q4 Analytics Dashboard emerges not merely as a collection of metrics, but as an indispensable strategic compass, offering a real-time, consolidated view of performance that informs immediate decisions and lays the groundwork for future success.
+<br><br>
+At its core, a Q4 analytics dashboard is a centralized, visual representation of Key Performance Indicators (KPIs) relevant to a business's objectives during this pivotal period. Unlike a static report, it's dynamic and interactive, designed to provide instant clarity on complex data. It typically integrates data from diverse sources – sales, marketing, operations, finance, and customer service – offering a holistic snapshot. For sales teams, this might mean real-time revenue figures, conversion rates, average order value, and product performance. Marketing departments would scrutinize campaign effectiveness, customer acquisition costs, website traffic, and lead generation. Operations could track inventory levels, shipping efficiency, and supply chain bottlenecks, while finance monitors profit margins, expenses, and cash flow.
+<br><br>
+The strategic importance of a Q4 dashboard lies in its capacity to facilitate rapid, informed decision-making. During the high-stakes environment of year-end, minor deviations can have significant impacts. A dashboard allows leadership to quickly identify trends, pinpoint anomalies, and understand the "why" behind the numbers. Is a particular product line underperforming despite increased marketing spend? Is customer churn unexpectedly high? Are shipping delays impacting customer satisfaction? By visualizing these insights, businesses can pivot marketing strategies, reallocate resources, adjust pricing, or address operational inefficiencies almost instantaneously, mitigating potential losses and capitalizing on emerging opportunities. This agility is crucial for optimizing the final push for revenue and profitability.
+<br><br>
+Furthermore, the Q4 analytics dashboard serves a dual purpose: it’s both a rearview mirror and a forward-looking periscope. While it provides a live look at current performance, it simultaneously offers the foundational data for comprehensive year-end reviews. The insights gleaned from Q4 performance are invaluable for understanding what worked, what didn't, and why. This historical context directly informs strategic planning for the upcoming fiscal year. Budget allocations for Q1, setting achievable sales targets, refining marketing strategies, identifying areas for operational improvement, and even informing product development roadmaps – all of these critical decisions are more robust and accurate when grounded in the concrete data presented by the Q4 dashboard.
+<br><br>
+In essence, the Q4 analytics dashboard transcends a mere reporting tool; it is a critical strategic asset. It empowers stakeholders across the organization with shared visibility, fostering accountability and enabling collaborative problem-solving. By transforming raw data into actionable intelligence, it allows businesses to not only meet their ambitious year-end goals but also to derive profound lessons that will shape their trajectory long after the final sale of December 31st. In an increasingly competitive landscape, mastering the art of Q4 through data-driven insights is not just an advantage; it’s a necessity for sustained success
+                </div>
+                <div id="contentWrite3" class="contentWrite" contenteditable="true" spellcheck="false">The Grand Unveiling: Mastering the Product Launch Campaign
+<br><br>
+In the bustling, ever-evolving marketplace, the introduction of a new product is akin to a theatrical debut. It's not merely about revealing an innovation; it's about orchestrating a symphony of anticipation, communication, and conversion. This intricate process is known as a product launch campaign, a strategic, multi-faceted endeavor designed to generate awareness, build excitement, and drive initial adoption. Far more than a simple press release, a successful launch campaign is the critical first impression that can dictate a product's trajectory and secure its place within the competitive landscape.
+<br><br>
+The bedrock of any successful product launch campaign lies in meticulous planning. This phase begins long before the product is even finalized, encompassing extensive market research to identify the target audience, understand their needs, and pinpoint the unique value proposition (UVP) that the new offering brings. Competitor analysis helps position the product strategically, highlighting its differentiation. Crucially, clear, measurable goals must be established – whether it's achieving a certain number of pre-orders, securing media mentions, or reaching specific sales targets within the first few weeks. This foundational work ensures that every subsequent action is aligned with a cohesive vision and purpose, transforming a mere announcement into a strategic market entry.
+<br><br>
+With a robust strategy in place, the campaign transitions into the execution phase, often segmented into pre-launch, launch day, and post-launch activities. The pre-launch phase is critical for building momentum and cultivating a sense of scarcity or exclusivity. This can involve teaser campaigns across social media, early access programs for influencers or select customers, behind-the-scenes content, and strategic media outreach to generate buzz. Creating compelling landing pages, optimizing for search engines, and collecting email subscribers are also vital for capturing early interest. The goal is to prime the market, turning potential customers into eager participants awaiting the official unveiling.
+<br><br>
+On launch day itself, the campaign reaches its crescendo. This is when all pre-planned efforts converge, typically involving a synchronized blast across various channels: press releases, targeted advertising, social media campaigns, email marketing, and potentially live events or product demonstrations. The messaging must be consistent, clear, and compelling, focusing on the product's benefits and how it solves specific customer pain points. The immediate impact of launch day is crucial for establishing initial sales velocity and creating a strong media narrative that amplifies the product's arrival.
+<br><br>
+Yet, the journey does not conclude with the initial fanfare. The post-launch phase is equally critical for sustaining momentum and converting initial interest into lasting customer relationships. This involves continuous monitoring of sales data, website traffic, social media engagement, and, most importantly, customer feedback. Addressing queries, providing robust customer support, and collecting testimonials help build trust and solidify the product's reputation. Furthermore, this phase offers opportunities for iteration and optimization, allowing marketers to fine-tune messaging, refine targeting, and adapt to market responses. This ongoing engagement ensures that the product remains relevant and continues to meet evolving customer needs.
+<br><br>
+Ultimately, a product launch campaign is far more than a marketing event; it is a declaration of intent, a carefully orchestrated introduction designed to make a profound and lasting first impression. From meticulous planning and strategic pre-launch hype to coordinated launch-day execution and adaptive post-launch nurturing, every step is vital. A well-executed campaign not only ensures initial sales success but also lays the groundwork for sustained growth, brand loyalty, and the long-term viability of the product in an increasingly competitive world
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tasks">
+        In Progress...
+    </div>
+
+    <!-- A.I. Bot -->
+    <div id="aiBot">
+        <div id="icon"> <i class="ri-message-3-fill"></i> </div>
+        <div id="chatbox">
+            <div id="headerBot">
+                <div id="circle1"><i class="ri-robot-2-fill"></i></div>
+                <h2 id="chatBotName">Chatbot</h2>
+                <button id="down"><i class="ri-arrow-down-wide-line"></i></button>
+            </div>
+            <div id="chat">
+                <div id="botText">
+                    <div id="circleBox">
+                        <div id="circle2"><i class="ri-robot-2-fill" id="boticn"></i></div>
+                    </div>
+                    <p id="botReply" style="white-space: pre-line;"> there! How can I be of service to you? 🤖</p>
+                </div>
+                <div id="botText" style="cursor: pointer;">
+                    <div id="circleBox">
+                        <div id="circle2"><i class="ri-robot-2-fill" id="boticn"></i></div>
+                    </div>
+                    <p id="botReply" style="white-space: pre-line;">Use : <br>project : xyz & about : prompt</p>
+                </div>
+            </div>
+            <div id="enter">
+                <input id="input" type="text" placeholder="Message...">
+                <i class="ri-send-plane-fill"></i>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/dashboard.js"></script>
+</body>
+</html>

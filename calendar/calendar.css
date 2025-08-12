@@ -1,0 +1,81 @@
+body{
+    min-height: 100vh;
+    background-color: rgba(82, 134, 219, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendar{
+    background-color: white;
+    width: 380px;
+    height: auto;
+    border-radius: 15px;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    font-size: larger;
+    align-items: center;
+}
+.monthYr{
+    cursor: pointer;
+    font-weight: 600;
+}
+#prevBtn{
+    background-color: white;
+    border: solid 0.1px rgb(205, 198, 198);
+    border-radius: 10px;
+    transform: scale(1.5);
+    font-weight: bolder;
+    cursor: pointer;
+}
+#nextBtn{
+    background-color: white;
+    border: solid 0.1px rgb(205, 198, 198);
+    border-radius: 10px;
+    transform: scale(1.5);
+    font-weight: bolder;
+    cursor: pointer;
+}
+.days{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    font-size: medium;
+}
+.day{
+    text-align: center;
+    padding: 10px;
+    color: rgb(92, 92, 92);
+}
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+}
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 20px; height: 20px;
+    transition: 0.2s;
+}
+
+.date:hover,
+.date.active{
+    background: rgb(237, 94, 94);
+    color: white;
+}
+.date.inactive{
+    color: rgb(153, 151, 151);
+}
+.date.date.inactive:hover{
+    color: gray;
+}

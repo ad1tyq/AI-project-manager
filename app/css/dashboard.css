@@ -1,0 +1,285 @@
+body{
+    font-family: sans-serif;
+}
+#home{
+    display: flex;
+    align-items: center;
+    top: 11.9%; left: 17.4%;
+    height: 591px;
+    width: 82.6%;
+    background-color: rgb(245, 245, 249);
+    position: absolute;
+}
+#sideBar{
+    height: 671px;
+    width: 250px;
+    border-right: solid 0.5px rgb(184, 180, 180);
+    position: absolute;
+    background-color: white;
+    justify-content: left;
+    top: 0%;
+    left: 0%;
+}
+#logobar{
+    height: 70px;
+    border-bottom: solid 0.5px rgb(184, 180, 180);
+    display: flex;
+    cursor: pointer;
+    color: rgb(42, 41, 41);
+}
+#logobar:hover{
+    background-color: rgb(245, 241, 241);
+    transition: 0.1s;
+}
+#logoText{
+    position: absolute;
+    left: 30%;
+    top: 0.7%;
+    align-items: center;
+}
+.ri-mind-map{
+    background-color: rgb(88, 99, 195);
+    border-radius: 6px;
+    padding: 5px;
+    left: 12%;
+    top: 3.1%;
+    color: white;
+    position: absolute;
+    transform: scale(1.6);
+}
+#contents{
+    top: 80px;
+    height: 551px;
+    display: flex;
+    flex-direction: column;
+}
+#header{
+    height: 80px;
+    width: 1190px;
+    border-bottom: solid 0.5px rgb(184, 180, 180);
+    position: absolute;
+    left: 250px;
+    top: 0%;
+}
+.content{
+    width: 90%;
+    height: 60px;
+    border-radius: 15px;
+    border-bottom: solid 0.05px rgb(247, 243, 243);
+    border-top: solid 0.05px rgb(247, 243, 243);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: large;
+    cursor: pointer;
+    color: rgb(69, 67, 67);
+}
+.content:hover{
+    background-color: rgb(245, 241, 241);
+    transition: 0.1s;
+}
+#content1{
+    margin-top: 20px;
+}
+#cicn{
+    margin-top: -3px;
+    transform: scale(1.1);
+    margin-left: 25px;
+    margin-right: 15px;
+}
+#srchbar{
+    position: absolute;
+    left: 58.5%;
+    top: 23%;
+    padding: 8px;
+    height: 25px;
+    width: 250px;
+    border-radius: 15px;
+}
+.ri-search-line{
+    position: absolute;
+    color: gray;
+    top: 25%;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#srch{
+    margin-top: -10px;
+    margin-left: -20px;
+    padding: 8px;
+    padding-left: 50px;
+    height: 25px;
+    width: 250px;
+    border: solid 0.1px rgb(179, 176, 176);
+    border-radius: 15px;
+    outline: none;
+    font-size: small;
+}
+#newProjectHeader{
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    background-color: rgb(88, 99, 195);
+    top: 20.5%;
+    left: 85.5%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 42px;
+    text-align: center;
+    cursor: pointer;
+}
+.ri-add-line{
+    position: absolute;
+    color: white;
+    top: 23%;
+    left: 12%;
+    transform: scale(1.3);
+}
+#homeStatus{
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    top: 0%;
+    border-bottom: solid 0.5px rgb(184, 180, 180);
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.status{
+    width: 250px;
+    height: 100px;
+    background-color: white;
+    border: solid 0.5px rgb(206, 202, 202);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+#hsText{
+    margin-left: 40px;
+    height: 80px;
+    margin-top: -5px;
+}
+#hsIcon{
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    margin-left: 35px;
+    transform: scale(2);
+}
+#WorkFlow{
+    position: absolute;
+    width: 100%;
+    height: 423px;
+    top: 28.5%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#recentProjects{
+    height: 350px;
+    width: 720px;
+    background-color: white;
+    margin-left: 50px;
+    border: solid 0.5px rgb(206, 202, 202);
+    border-radius: 10px;
+}
+#calendarCard{
+    height: 300px;
+    width: 350px;
+    background-color: white;
+}
+#tasks{
+    top: 11.9%; left: 17.4%;
+    height: 591px;
+    width: 82.6%;
+    background-color: rgb(237, 66, 66);
+    position: absolute;
+    display: none;
+    text-align:center;
+    font-size:  xx-large;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+}
+#recentProjects00{
+    width: 720px;
+    background-color: rgb(255, 255, 255);
+    height: 85px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: solid 0.5px rgb(224, 219, 219);;
+    position: absolute;
+}
+#recentProjects01{
+    width: 720px;
+    background-color: rgb(255, 255, 255);
+    height: 264px;
+    top: 122px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: solid 0.5px rgb(224, 219, 219);;
+    position: absolute;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+#recentProjects1{
+    margin-top: 20px;
+}
+#WorkFlowrpN{
+    margin-left: 30px;
+    margin-top: 35px;
+    font-weight: 510;
+    position: absolute;
+}
+#rpViewAll{
+    position: absolute;
+    top: 31%;
+    left: 84%;
+    padding: 8px;
+    padding-right: 13px; padding-left: 13px;
+    border-radius: 5px;
+    background-color: white;
+    border: solid 0.5px rgb(255, 255, 255);
+    cursor: pointer;
+}
+#rpViewAll:hover{
+    background-color: rgb(249, 176, 39);
+    border: solid 0.5px rgb(249, 176, 39);
+    color: white;
+    transition: 0.1s;
+}
+.rp{
+    width: 650px;
+    border: solid 0.5px rgb(184, 180, 180);
+    border-radius: 10px;
+    height: 75px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.rp:hover{
+    background-color: rgb(250, 247, 247);
+    transition: 0.1s;
+}
+#rpText{
+    margin-left: 30px;
+}
+#rpIcon{
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    margin-left: 30px;
+    padding: 3px;
+    border: solid 1.5px rgb(92, 91, 91);
+    color: rgb(92, 91, 91);
+    border-radius: 5px;
+    transform: scale(1.6);
+}

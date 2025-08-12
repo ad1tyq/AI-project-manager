@@ -1,0 +1,187 @@
+#aiBot{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(82, 134, 219, 0.4);
+}
+#icon{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(88, 99, 195);
+    border-radius: 50px;
+    top: 90%;
+    left: 94.5%;
+    overflow: hidden;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chatbox{
+    border: solid 0.5px rgb(206, 202, 202);
+    font-family: sans-serif;
+    overflow: hidden;
+    width: 350px;
+    height: 485px;
+    background-color: rgb(247, 243, 243);
+    top: 17.5%;
+    left:70%;
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transform: translate(56%,54.5%) scale(0);
+    transition: all ease 0.3s;
+}
+#headerBot{
+    width: 350px;
+    height: 70px;
+    background-color: rgb(88, 99, 195);
+}
+.ri-robot-2-fill{
+    position: absolute;
+    margin-top: 2.2px;
+}
+#circle1{
+    margin: 20px;
+    margin-top: 23px;
+    margin-left: 29px;
+    color: rgb(88, 99, 195);
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    transform: scale(1.8);
+    position: absolute;
+}
+#chatBotName{
+    color: white;
+    margin-left: 77px;
+    margin-top: 25px;
+}
+#down{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    margin-left: 305px;
+    margin-top: -45px;
+    background-color: rgb(88, 99, 195);
+    border: none;
+    display: flex;
+    justify-content: center;
+    transform: scale(2.5);
+    cursor: pointer;
+    position: absolute;
+}
+.ri-arrow-down-wide-line{
+    color:white;
+}
+#chat{
+    height: 340px;
+    overflow: scroll;
+    scrollbar-width: none;
+    scroll-behavior: jump;
+    font-size: 14px;
+}
+#botText{
+    padding-top: 10px; padding-bottom: 10px;
+    height: fit-content;
+    width: 350px;
+    display: flex;
+    align-items: end;
+}
+#boticn{
+    margin-top: 5.5px;
+}
+#circle2{
+    margin: 20px;
+    margin-bottom: 4px;
+    color: white;
+    background-color: rgb(88, 99, 195);
+    width: 28px;
+    height: 28px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    transform: scale(1.5);
+}
+#circleBox{
+    display: flex;
+    align-items: end;
+}
+#botReply{
+    margin-bottom: 1px;
+    background-color: rgba(111, 143, 255, 0.4);
+    align-self: last baseline;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0,0.8);
+    max-width: 55%;
+    height: fit-content;
+    padding: 12px;
+    padding-top: 16px;
+    padding-left: 15px;
+}
+#manText{
+    height: fit-content;
+    width: 350px;
+    display: flex;
+    align-items: end;
+    justify-content: right;
+}
+#manReply{
+    background-color: rgb(108, 116, 195);
+    margin-bottom: 0px;
+    align-self: last baseline;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    margin-right: 13.5px;
+    align-items: center;
+    color: rgba(255, 255, 255);
+    max-width: 55%;
+    height: fit-content;
+    padding: 12px;
+    padding-top: 15px;
+}
+#enter{
+    display: flex;
+    justify-content: center;
+}
+#input{
+    margin-top: 10px;
+    width: 305px;
+    height: 40px;
+    border-radius: 100px;
+    border: solid 1px rgb(211, 212, 218);
+    padding-left: 15px;
+    outline: none;
+}
+.ri-send-plane-fill{
+    margin-left: 281px;
+    margin-top: 16px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding-top: 9px;
+    padding-right: 11px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    color: rgb(158, 158, 162);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.ri-message-3-fill{
+    color: white;
+    transform: scale(1.2) rotate(360deg);
+    transition: all ease 0.3s;
+    position: absolute;
+}
